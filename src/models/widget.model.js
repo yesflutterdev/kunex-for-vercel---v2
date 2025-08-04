@@ -242,7 +242,7 @@ const widgetSchema = new mongoose.Schema(
           // Carousel fields
           carousel: {
             title: { type: String, default: '' },
-            url: { type: String, default: '' }
+            url: { type: [String], default: [] }
           },
           
           // Grid fields
