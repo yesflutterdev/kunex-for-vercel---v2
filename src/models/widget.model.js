@@ -228,9 +228,24 @@ const widgetSchema = new mongoose.Schema(
         default: {},
         
         // Custom Link fields
-        customLink: {
-          title: { type: String, default: '' },
-          url: { type: String, default: '' }
+         customLink: {
+          title: {
+            type: String,
+            default: ''
+          },
+          url: {
+            type: String,
+            default: ''
+          },
+          style: {
+            type: String,
+            enum: ['button', 'rectangular'],
+            default: 'rectangular'
+          },
+          imageUrl: {
+            type: String,
+            default: ''
+          }
         },
         
         // Media fields (Photo/Video)
