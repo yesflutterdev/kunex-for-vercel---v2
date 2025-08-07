@@ -24,7 +24,7 @@ const widgetSchema = new mongoose.Schema(
     type: {
       type: String,
       enum: [
-        'text', 'image', 'video', 'audio', 'button', 'form', 'map', 'social_media',
+        'text', 'image', 'video', 'youtube_video' ,'audio', 'button', 'form', 'map', 'social_media',
         'testimonial', 'gallery', 'slider', 'countdown', 'pricing_table', 'chart',
         'embed', 'spacer', 'divider', 'icon', 'accordion', 'tabs', 'modal',
         'calendar', 'booking', 'payment', 'newsletter', 'search', 'menu',
